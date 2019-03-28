@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    background-color: red;
+  }
+}
 .main-nav {
   width: 100%;
   border-bottom: 2px dashed silver;
@@ -179,6 +184,13 @@ img {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  .main-nav div {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 0.5rem;
+  }
 }
 .main-nav div nav {
   margin-right: 2rem;

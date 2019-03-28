@@ -9,8 +9,14 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
+        
+    @media @mobile {
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 0.5rem;
+    }
     
-    nav {
+        nav {
         margin-right: 2rem;
         
         a {
@@ -20,5 +26,5 @@
         color: darkgray;
         }
     }
-}
+ }
 }
