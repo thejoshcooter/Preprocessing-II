@@ -26,3 +26,16 @@
     justify-content: center;
     align-items: center;
 }
+
+// Button Mixins
+
+.instabutton(@width: 200px, @height: 40px, @bgcolor: @eastern-blue) {
+    color: #fff;
+    font-size: 1.75rem;
+    border-radius: 15px;
+    box-shadow: 1px 2px ;
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    .flexbox(space-around, center);
+}

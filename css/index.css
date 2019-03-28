@@ -167,7 +167,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  background-color: red;
 }
 .main-nav {
   display: flex;
@@ -178,7 +177,6 @@ img {
   border-bottom: 2px dashed lightgray;
 }
 .main-nav nav {
-  background-color: blue;
   margin-right: 2rem;
 }
 .main-nav nav a {
@@ -243,4 +241,23 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.main-header {
+  margin: 0 0 2rem 0;
+  border-bottom: 2px dashed lightgray;
+}
+.main-header h2 {
+  margin: 1rem 0;
+}
+.destination .btn {
+  color: #fff;
+  font-size: 1.75rem;
+  border-radius: 15px;
+  box-shadow: 1px 2px ;
+  width: 200px;
+  height: 40px;
+  background-color: #17A2B8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
