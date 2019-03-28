@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+.main-nav {
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    
+    div {
+    .flexbox(space-between, center);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+        
+    @media @mobile {
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 0.5rem;
+    }
+    
+        nav {
+        margin-right: 2rem;
+        
+        a {
+        margin: 0 2rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: darkgray;
+        }
+    }
+ }
+}
