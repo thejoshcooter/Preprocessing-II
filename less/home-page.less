@@ -66,12 +66,26 @@
     margin: 0 0 2rem 0;
     border-bottom: 2px dashed lightgray;
     
+    @media @mobile {
+        .flexcol(space-around, center);
+    }
+    
     h2 {
         margin: 1rem 0;
+        
+        @media @mobile {
+            align-self: flex-start;
+        }
+    }
+    
+    @media @mobile {
+        img {
+            width:90%;
+        }
     }
 }
 
-// buttons
+// bottom content buttons
 
 .destination {
     
