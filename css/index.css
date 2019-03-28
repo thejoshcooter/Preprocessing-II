@@ -167,6 +167,20 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-color: red;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 0 0;
+  border-bottom: 2px dashed lightgray;
+}
+.main-nav a {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: darkgray;
 }
 .footer {
   width: 100%;

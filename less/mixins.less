@@ -1,1 +1,28 @@
 // Mixins in here
+
+// Test Mixins
+
+.test(@color) {
+    background-color: @color;
+}
+
+// Flexbox Mixins
+
+.flexbox(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flex-center-row() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center-col() {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
