@@ -227,13 +227,31 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -241,6 +259,11 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-flow: column-reverse nowrap;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -263,9 +286,36 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination h4 {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination p {
+    margin: 1rem 0;
+  }
 }
 .main-header {
   margin: 0 0 2rem 0;
@@ -303,4 +353,18 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .destination .btn {
+    color: #fff;
+    font-size: 1.75rem;
+    border-radius: 15px;
+    box-shadow: 1px 2px ;
+    width: 100%;
+    height: 40px;
+    background-color: #17A2B8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
